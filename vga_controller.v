@@ -39,8 +39,8 @@ output [7:0] r_data;
 reg [18:0] ADDR;
 reg [23:0] bgr_data;
 wire VGA_CLK_n;
-wire [7:0] index;
-reg [7:0] temp; 
+wire [18:0] index;
+reg [18:0] temp; 
 wire [23:0] bgr_data_raw;
 wire cBLANK_n,cHS,cVS,rst;
 
@@ -77,48 +77,51 @@ img_data	img_data_inst (
 				.q ( index )
 				);
 				
-//always@(posedge iVGA_CLK)
-//begin
-//	begin
-//		if(((address_x > xcoordinate) && address_x < (xcoordinate+50)) && ((address_y > ycoordinate)&&address_y<(ycoordinate+50)))
-//				temp <= 1;
-//		else if(address_y<240)
-//				temp<=2;
-//		else
-//				temp<=0;
-//	end	
-//	if(~up&&ycoordinate>0&&counter>1000000)
-//		begin
-//			ycoordinate = ycoordinate - 1;
-//			counter = 0 ; 
-//		end
-//	if(~down&&ycoordinate<430&&counter>1000000)
-//		begin
-//			ycoordinate = ycoordinate +1; 
-//			counter = 0; 
-//		end
-//	if(~right&&xcoordinate<590&&counter>1000000)
-//		begin
-//			xcoordinate = xcoordinate +1; 
-//			counter = 0;
-//		end
-//	if(~left&&xcoordinate>0&&counter>1000000)
-//		begin
-//			xcoordinate = xcoordinate -1; 
-//			counter = 0; 
-//		end
-//	if(counter>10000000000)
-//		counter =0;
-//	counter = counter +1; 
-//end
-//assign index = temp; 
+				
+
+always@(posedge iVGA_CLK)
+begin
+	begin
+		if(((address_x > xcoordinate) && address_x < (xcoordinate+50)) && ((address_y > ycoordinate)&&address_y<(ycoordinate+50)))
+				temp <= 19'h008d0;
+		else
+				temp<= index;
+	end	
+	if(~up&&ycoordinate>0&&counter>1000000)
+		begin
+			ycoordinate = ycoordinate - 1;
+			counter = 0 ; 
+		end
+	if(~down&&ycoordinate<430&&counter>1000000)
+		begin
+			ycoordinate = ycoordinate +1; 
+			counter = 0; 
+		end
+	if(~right&&xcoordinate<590&&counter>1000000)
+		begin
+			xcoordinate = xcoordinate +1; 
+			counter = 0;
+		end
+	if(~left&&xcoordinate>0&&counter>1000000)
+		begin
+			xcoordinate = xcoordinate -1; 
+			counter = 0; 
+		end
+	if(counter>10000000000)
+		counter =0;
+	counter = counter +1; 
+end
+
+//index = 
+wire [18:0] color_index;
+assign color_index = temp; 
 /////////////////////////
 //////Add switch-input logic here
 
 
 //////Color table output
 img_index	img_index_inst (
-	.address ( index ),
+	.address ( color_index ),
 	.clock ( iVGA_CLK ),
 	.q ( bgr_data_raw)
 	);	

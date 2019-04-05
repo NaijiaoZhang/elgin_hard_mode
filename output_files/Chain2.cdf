@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE115F29) Path("C:/Users/naiji/Desktop/elgin_hard_mode/output_files/") File("skeleton.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE115F29) Path("C:/Users/Mason/Documents/GitHub/ECE350/elgin_hard_mode/output_files/") File("skeleton.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

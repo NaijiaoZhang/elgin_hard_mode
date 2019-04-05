@@ -1,5 +1,5 @@
 Flow report for skeleton
-Fri Apr 05 04:06:23 2019
+Fri Apr 05 17:52:15 2019
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -41,17 +41,17 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Fri Apr 05 04:06:23 2019       ;
+; Flow Status                        ; Successful - Fri Apr 05 17:52:15 2019       ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; skeleton                                    ;
 ; Top-level Entity Name              ; skeleton                                    ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 887 / 114,480 ( < 1 % )                     ;
-;     Total combinational functions  ; 818 / 114,480 ( < 1 % )                     ;
-;     Dedicated logic registers      ; 389 / 114,480 ( < 1 % )                     ;
-; Total registers                    ; 389                                         ;
+; Total logic elements               ; 1,727 / 114,480 ( 2 % )                     ;
+;     Total combinational functions  ; 1,658 / 114,480 ( 1 % )                     ;
+;     Dedicated logic registers      ; 498 / 114,480 ( < 1 % )                     ;
+; Total registers                    ; 498                                         ;
 ; Total pins                         ; 158 / 529 ( 30 % )                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 2,463,744 / 3,981,312 ( 62 % )              ;
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/05/2019 04:05:43 ;
+; Start date & time ; 04/05/2019 17:51:07 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; skeleton            ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 53447170565667.155445154314428        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 75361030135318.155450106620452        ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                           ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)             ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --             ;
@@ -103,12 +103,12 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:12     ; 1.0                     ; 5151 MB             ; 00:00:20                           ;
-; Fitter                    ; 00:00:13     ; 1.1                     ; 6172 MB             ; 00:00:21                           ;
-; Assembler                 ; 00:00:03     ; 1.0                     ; 4940 MB             ; 00:00:03                           ;
-; TimeQuest Timing Analyzer ; 00:00:03     ; 1.2                     ; 5168 MB             ; 00:00:03                           ;
-; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 4936 MB             ; 00:00:02                           ;
-; Total                     ; 00:00:34     ; --                      ; --                  ; 00:00:49                           ;
+; Analysis & Synthesis      ; 00:00:18     ; 1.0                     ; 5020 MB             ; 00:00:34                           ;
+; Fitter                    ; 00:00:28     ; 1.0                     ; 5560 MB             ; 00:00:30                           ;
+; Assembler                 ; 00:00:04     ; 1.0                     ; 4929 MB             ; 00:00:04                           ;
+; TimeQuest Timing Analyzer ; 00:00:05     ; 1.0                     ; 5096 MB             ; 00:00:05                           ;
+; EDA Netlist Writer        ; 00:00:06     ; 1.0                     ; 4928 MB             ; 00:00:04                           ;
+; Total                     ; 00:01:01     ; --                      ; --                  ; 00:01:17                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -117,11 +117,11 @@ agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; DESKTOP-O6DQNCD  ; Windows 8 ; 6.2        ; x86_64         ;
-; Fitter                    ; DESKTOP-O6DQNCD  ; Windows 8 ; 6.2        ; x86_64         ;
-; Assembler                 ; DESKTOP-O6DQNCD  ; Windows 8 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; DESKTOP-O6DQNCD  ; Windows 8 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-O6DQNCD  ; Windows 8 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; DESKTOP-M8VOM87  ; Windows 8 ; 6.2        ; x86_64         ;
+; Fitter                    ; DESKTOP-M8VOM87  ; Windows 8 ; 6.2        ; x86_64         ;
+; Assembler                 ; DESKTOP-M8VOM87  ; Windows 8 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-M8VOM87  ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-M8VOM87  ; Windows 8 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 

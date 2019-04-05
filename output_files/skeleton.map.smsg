@@ -1,1 +1,1 @@
-Warning (10268): Verilog HDL information at vga_controller.v(76): always construct contains both blocking and non-blocking assignments File: C:/Users/naiji/Desktop/elgin_hard_mode/vga_controller.v Line: 76
+Warning (10268): Verilog HDL information at vga_controller.v(82): always construct contains both blocking and non-blocking assignments File: C:/Users/Mason/Documents/GitHub/ECE350/elgin_hard_mode/vga_controller.v Line: 82

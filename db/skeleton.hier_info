@@ -2422,10 +2422,10 @@ r_data[4] <= bgr_data[4].DB_MAX_OUTPUT_PORT_TYPE
 r_data[5] <= bgr_data[5].DB_MAX_OUTPUT_PORT_TYPE
 r_data[6] <= bgr_data[6].DB_MAX_OUTPUT_PORT_TYPE
 r_data[7] <= bgr_data[7].DB_MAX_OUTPUT_PORT_TYPE
-up => ~NO_FANOUT~
-down => ~NO_FANOUT~
-left => ~NO_FANOUT~
-right => ~NO_FANOUT~
+up => always1.IN1
+down => always1.IN1
+left => always1.IN1
+right => always1.IN1
 
 
 |skeleton|vga_controller:vga_ins|video_sync_generator:LTM_ins
